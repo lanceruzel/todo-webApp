@@ -69,6 +69,11 @@ function addTask(todo){
         taskEl.querySelector('.delBtn').classList.toggle('showDelete');
     })
 
+    taskEl.addEventListener('swiped-right', function (e) {
+        console.log(e.target); // element that was swiped
+        console.log(e.detail); // see event data below
+    });
+
     //Delete Task
     taskEl.querySelector('.delBtn').addEventListener('click', e => {
         e.preventDefault();
