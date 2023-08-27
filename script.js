@@ -28,11 +28,6 @@ function addTask(todo){
     let taskEl;
     let inputValue = input.value;
 
-    if(!todo && inputValue === ''){
-        alert('Input is empty');
-        return;
-    }
-    
     //check if todo is existing
     if(todo){
         inputValue = todo.task;
