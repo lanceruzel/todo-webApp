@@ -70,8 +70,7 @@ function addTask(todo){
     })
 
     taskEl.addEventListener('swiped-right', function (e) {
-        console.log(e.target); // element that was swiped
-        console.log(e.detail); // see event data below
+        taskEl.querySelector('.delBtn').classList.toggle('showDelete');
     });
 
     //Delete Task
