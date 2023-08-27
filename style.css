@@ -154,7 +154,7 @@ small{
 @media only screen and (max-width: 600px){
     .container{
         padding: 0 25px;
-        max-height: 400px;
+        max-height: 0;
     }
 
     .reminder{
