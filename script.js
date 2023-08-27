@@ -65,11 +65,11 @@ function addTask(todo){
     //Right Click Task
     taskEl.addEventListener('contextmenu', e => {
         e.preventDefault();
-
         taskEl.querySelector('.delBtn').classList.toggle('showDelete');
     })
 
     taskEl.addEventListener('swiped-right', function (e) {
+        e.preventDefault();
         taskEl.querySelector('.delBtn').classList.toggle('showDelete');
     });
 
