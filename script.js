@@ -28,7 +28,7 @@ function addTask(todo){
     let taskEl;
     let inputValue = input.value;
 
-    if(inputValue === ''){
+    if(!todo && inputValue === ''){
         alert('Input is empty');
         return;
     }
